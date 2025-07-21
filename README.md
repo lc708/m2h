@@ -1,6 +1,6 @@
 # M2H - Markdown 转 HTML 转换器
 
-一个专业的、现代化的 Markdown 转 HTML 转换工具，具有实时预览和导出功能。
+一个现代化的 Markdown 转 HTML 转换工具，具有实时预览和导出功能。
 
 ## ✨ 特性
 

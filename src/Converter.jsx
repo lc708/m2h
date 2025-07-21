@@ -11,7 +11,8 @@ import {
   Eye, 
   Code2, 
   Sparkles,
-  Check 
+  Check,
+  Github
 } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
@@ -201,6 +202,24 @@ ${document.querySelector('#preview-content').innerHTML}
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+      {/* GitHub Link - Fixed Position */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5 }}
+        className="fixed top-4 right-4 z-50"
+      >
+        <a
+          href="https://github.com/lc708/m2h"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm hover:bg-white shadow-lg hover:shadow-xl rounded-full border border-slate-200 transition-all duration-300 hover:scale-110"
+          title="View on GitHub"
+        >
+          <Github className="w-6 h-6 text-slate-700 group-hover:text-slate-900 transition-colors" />
+        </a>
+      </motion.div>
+
       <div className="container mx-auto p-4 max-w-7xl">
         {/* Header */}
         <motion.div 
@@ -217,7 +236,7 @@ ${document.querySelector('#preview-content').innerHTML}
             </h1>
           </div>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-            Professional Markdown to HTML converter with live preview and export options
+            Modern Markdown to HTML converter with live preview and export options
           </p>
         </motion.div>
 
